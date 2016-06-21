@@ -1,0 +1,10 @@
+.root {
+  background: #FFF;
+  padding: 16px;
+  background: #FFF;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.root:last-child {
+  border: none;
+}
