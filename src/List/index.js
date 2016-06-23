@@ -13,6 +13,6 @@ const List = ({ children, className }) => {
   return <ul className={classes}>{children}</ul>
 }
 
-List.propTypes    = propTypes
+List.propTypes = propTypes
 
 export default List
