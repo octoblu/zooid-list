@@ -1,8 +1,8 @@
 .root {
-  background: #FFF;
+  background: #fff;
   padding: 8px 16px;
-  background: #FFF;
-  border-bottom: 1px solid #EAEAEA;
+  background: #fff;
+  border-bottom: 1px solid #eaeaea;
 }
 
 .root:last-child {
