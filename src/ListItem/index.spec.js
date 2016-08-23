@@ -1,6 +1,7 @@
 import chai, { expect } from 'chai'
 import chaiEnzyme from 'chai-enzyme'
 import React from 'react'
+import Sinon from 'sinon'
 import sinonChai from 'sinon-chai'
 import { shallow } from 'enzyme'
 
@@ -27,6 +28,14 @@ describe('<ListItem />', () => {
     it('should merge classNames', () => {
       const sut = shallow(<ListItem className="Fancy" />)
       expect(sut).to.have.className('Fancy')
+    })
+  })
+  describe('when given onClick as prop', () => {
+    it('should handle click', () => {
+      const handleClick = Sinon.spy()
+      const sut = shallow(<ListItem onClick={handleClick} />)
+      sut.simulate('click')
+      expect(handleClick).to.have.been.called
     })
   })
 })
