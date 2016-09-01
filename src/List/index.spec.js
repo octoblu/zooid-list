@@ -28,6 +28,13 @@ describe('<List />', () => {
     })
   })
 
+  describe('when given style as prop', () => {
+    it('should merge styles', () => {
+      const sut = shallow(<List style='hi' />)
+      expect(sut).to.have.prop('style', 'hi')
+    })
+  })
+
   describe('when given unstyled as a prop', () => {
     it('should merge', () => {
     })

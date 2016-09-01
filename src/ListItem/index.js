@@ -11,16 +11,13 @@ const propTypes = {
 
 const defaultProps = {}
 
-const ListItem = ({ children, className, onClick }) => {
-  let props = {
-    className: classNames(styles.root, className),
-  }
+const ListItem = (argProps) => {
+  let props = {...argProps}
+  const { children, className, onClick } = props
+  props.className = classNames(styles.root, className)
 
   if (onClick) {
-    props = {
-      onClick,
-      className: classNames(styles.root, styles.button, className),
-    }
+    props.className = classNames(styles.root, styles.button, className)
   }
 
   return (

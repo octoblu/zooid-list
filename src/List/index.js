@@ -8,9 +8,11 @@ const propTypes = {
   className: PropTypes.string,
 }
 
-const List = ({ children, className }) => {
-  const classes = classNames(styles.root, className)
-  return <ul className={classes}>{children}</ul>
+const List = (argProps) => {
+  let props = {...argProps}
+  const { children, className } = props
+  props.className = classNames(styles.root, className)
+  return <ul {...props}>{children}</ul>
 }
 
 List.propTypes = propTypes

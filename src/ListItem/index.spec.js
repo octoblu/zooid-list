@@ -30,6 +30,14 @@ describe('<ListItem />', () => {
       expect(sut).to.have.className('Fancy')
     })
   })
+
+  describe('when given style as prop', () => {
+    it('should merge styles', () => {
+      const sut = shallow(<ListItem style='hi' />)
+      expect(sut).to.have.prop('style', 'hi')
+    })
+  })
+
   describe('when given onClick as prop', () => {
     it('should handle click', () => {
       const handleClick = Sinon.spy()
