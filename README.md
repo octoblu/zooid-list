@@ -2,9 +2,13 @@
 React Button Component
 
 [![Build Status](https://travis-ci.org/octoblu/zooid-list.svg?branch=master)](https://travis-ci.org/octoblu/zooid-list)
-[![npm version](https://badge.fury.io/js/zooid-list.svg)](http://badge.fury.io/js/zooid-list)
-[![Code Climate](https://codeclimate.com/github/octoblu/zooid-list.png)](https://codeclimate.com/github/octoblu/zooid-list)
+[![Test Coverage](https://codecov.io/gh/octoblu/zooid-list/branch/master/graph/badge.svg)](https://codecov.io/gh/octoblu/zooid-list)
+[![Dependency status](http://img.shields.io/david/octoblu/zooid-list.svg?style=flat)](https://david-dm.org/octoblu/zooid-list)
+[![devDependency Status](http://img.shields.io/david/dev/octoblu/zooid-list.svg?style=flat)](https://david-dm.org/octoblu/zooid-list#info=devDependencies)
 [![Slack Status](http://community-slack.octoblu.com/badge.svg)](http://community-slack.octoblu.com)
+
+[![NPM](https://nodei.co/npm/zooid-list.svg?style=flat)](https://npmjs.org/package/zooid-list)
+
 
 ## Install
 ```
